@@ -1,0 +1,39 @@
+  body {
+    background-color:#F3EA89;
+  }
+
+h1 {
+    text-align: center;
+    font-family: Cursive;
+    color:#8DBCEA;
+    font-size:2.5;
+  }
+  
+  .description {
+    text-align: center;
+    font-family: arial;
+  }
+  
+  form {
+    background-color: #8DBCEA;
+    color: #FFF;
+    border-radius: 10px;
+    font-family: Cursive;
+    width: 50%;
+    margin:auto;
+    padding:auto;
+  }
+  
+
+  
+  p {
+    text-align:center;
+    font-style:italic;
+    color:#8DBCEA;
+    font-size:1.5em;
+  }
+  
+  select {
+    width:150px;
+    margin
+  }

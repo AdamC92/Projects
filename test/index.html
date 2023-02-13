@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <title>
+         Portfolio Adam Cherkani
+      </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <!--test utilisation jQuery pour bouton qui fait remonter en haut de la page-->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+      <script>
+         jQuery(function () {
+         
+            $(function () {
+         
+               $(window).scroll(function () {
+         
+                  if ($(this).scrollTop() > 200) {
+         
+                     $('#scrollUp').css('right', '10px');
+         
+                  } else {
+         
+                     $('#scrollUp').removeAttr('style');
+         
+                  }
+      
+               });
+         
+            });
+         
+         });
+         
+      </script>
+   </head>
+   <body>
+      <!--Navbar-->
+      <nav>
+         <div class="profile">
+            <img
+               src="https://media.licdn.com/dms/image/C4E03AQEU9O8J3OwO-w/profile-displayphoto-shrink_100_100/0/1657381027026?e=1681344000&v=beta&t=Bd6CI-vClGmEEC-qZZnpMQqj4Yj1DfkyUsoG7t8mJmg"
+               alt="profile photo">
+            <h2>Adam Cherkani</h2>
+         </div>
+         <ul>
+            <li><a href="#about_me">Qui suis-je</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#social-platforms">Me contacter</a></li>
+         </ul>
+      </nav>
+      <!--Fin Navbar-->
+      <!--Section du contenu de la page-->
+      <section class="page-content">
+         <!--Header avec présentation rapide + image Vieux Port Marseille-->
+         <header id="about_me">
+            <h1>Hey, je suis Adam, développeur web junior à Marseille !</h1>
+            <p>
+               Anciennement dans la fonction publique, j'entame une reconversion en tant que développeur Web.
+               J'ai commencé par apprendre les bases en Html5 et en CSS3 par le biais d'OpenClassroom, de FreeCodeCamp,
+               Codecademy et d'autres supports.
+               Je suis actuellement en formation de Développeur Web à l'AFPA à Marseille et je cherche un stage d'environ
+               3 mois cet été pour compléter ma formation.
+            </p>
+         </header>
+         <div class="presentation-image">
+            <img src="https://lanouvelletribune.info/wp-content/uploads/2018/09/marseille.jpg" alt="AI image">
+         </div>
+         <!--Section avec les projets fait depuis FreeCodeCamp, photos projets qui devront Ãªtre rajoutÃ©s et revoir alignement descriptions/dates-->
+         <section class="projects-section" id="projets">
+            <h3>Projets réalisés</h3>
+            <div class="projects">
+               <div class="project">
+                  <h4><a href="https://www.freecodecamp.org/certification/AdamC92/responsive-web-design">Un formulaire
+                     d'enquête</a>
+                  </h4>
+                  <p class="description">
+                     Exercice réalisé sur FreeCodeCamp où il faut réaliser un formulaire d'enquête.
+                  </p>
+                  <p class="dates">Janvier 2023</p>
+               </div>
+               <div class="project">
+                  <h4><a href="https://www.freecodecamp.org/certification/AdamC92/responsive-web-design">Page hommage</a>
+                  </h4>
+                  <p class="description">
+                     Exercice réalisé sur FreeCodeCamp où il faut réaliser une page rendant hommage à un personnage.
+                  </p>
+                  <p class="dates">Janvier 2023</p>
+               </div>
+               <div class="project">
+                  <h4><a href="https://www.freecodecamp.org/certification/AdamC92/responsive-web-design">Page de
+                     documentation technique</a>
+                  </h4>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Molestias sunt, atque aliquid pariatur.
+                  </p>
+                  <p class="dates">Janvier 2023</p>
+               </div>
+               <div class="project">
+                  <h4><a href="https://www.freecodecamp.org/certification/AdamC92/responsive-web-design">Page d'achat d'un
+                     produit</a>
+                  </h4>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Molestias sunt, atque aliquid pariatur.
+                  </p>
+                  <p class="dates">Janvier 2023</p>
+               </div>
+               <div class="project">
+                  <h4><a href="https://www.freecodecamp.org/certification/AdamC92/responsive-web-design">Faire un
+                     portfolio</a>
+                  </h4>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Molestias sunt, atque aliquid pariatur.
+                  </p>
+                  <p class="dates">Janvier 2023</p>
+               </div>
+            </div>
+         </section>
+      </section>
+      <!--fin section contenu page et début footer avec test bouton to top-->
+      <footer>
+         <div id="social-platforms">
+            <h3>Follow me !</h3>
+            <a class="btn btn-icon btn-twitter" href="https://twitter.com/AChrkn"><i
+               class="fa fa-twitter"></i><span>Twitter</span></a>
+            <a class="btn btn-icon btn-linkedin" href="https://www.linkedin.com/in/adam-cherkani-37aa24244/"><i
+               class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+         </div>
+         <div id="scrollUp">
+            <a href="#top"><img src="https://www.linuxtricks.fr/upload/to_top.png" alt="to the bouton"></a>
+         </div>
+      </footer>
+   </body>
+</html>

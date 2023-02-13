@@ -1,0 +1,77 @@
+ /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-image: linear-gradient(to right top, #845ec2, #8e6cc1, #9779bf, #9f87be, #a795bc, #b198bd, #bb9bbd, #c49ebd, #d994b5, #ed8aa3, #fa8288, #ff8066);
+            font-family: Verdana, sans-serif;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-image: radial-gradient(circle, #845ec2, #8e6cc1, #9779bf, #9f87be, #a795bc, #b198bd, #bb9bbd, #c49ebd, #d994b5, #ed8aa3, #fa8288, #ff8066);
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: white;
+        }
+
+        button:active {
+            color:#fa8288;
+        }
+
+
+        input {
+            accent-color: purple;
+        }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<fieldset id="cqtv" class="background"> 
+    <legend>Gender ?</legend>
+<label for="male">male</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="female">female</label>
+<input type="radio" id="female" name="gender" value="female">
+
+<label for="other">other</label><input type="radio" id="other" name="gender" value="other">
+
+
+</fieldset>
+    
+<script type="text/javascript">
+    
+let cqtv = document.getElementById('cqtv');
+let female = document.getElementById('female');
+let other = document.getElementById('other');
+
+let male = document.getElementById('male')
+
+male.addEventListener('click' , function(){
+    cqtv.classList.toggle('backgroundMale');    
+});
+
+female.addEventListener('click' , function(){
+    cqtv.classList.toggle('backgroundFemale');    
+});
+
+
+other.addEventListener('click' , function(){
+    cqtv.classList.toggle('backgroundOther');   
+    
+    
+});
+
+    
+
+
+</script> 
+
+<input type="button" id="button1" class="button" onclick="colorChange()" value="Click Here" />
+
+
+
+</body>

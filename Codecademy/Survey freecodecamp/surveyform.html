@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <div class="label">
+    <label id="name-label" for="name">Name <input id="name" type="text" placeholder ="enter your name" required></label>
+    </div>
+    <div class="label">
+    <label id="email-label" for="email">Email <input id="email" type="email" placeholder="enter your email" required></label>
+    </div>
+    <div class="label">
+    <label id="number-label" for="number">Age <input id="number" type="number" min="18" max="99" placeholder="enter your age"></label>
+    </div>
+
+<p>Which option best describes your current role?</p>
+
+    <select class="current role" id="dropdown" required>
+      <option value="" selected disabled>Select current role</option>
+      <option>Student</option>
+      <option>Full time job</option>
+      <option>Full time learner</option>
+      <option>Prefer not to say</option>
+      <option>Other</option>
+      </select>
+
+<p>Would you recommend freeCodeCamp to a friend?</p>
+
+    <fieldset>
+
+      <div>
+        <input type="radio" id="definitely" name="friend" value="definitely" checked>
+      <label for="definitely">Definitely</label>
+      </div>
+
+      <div>
+      <input type="radio" id="maybe" name="friend" value="maybe">
+      <label for="maybe">Maybe</label>
+      </div>
+
+      <div>
+      <input type="radio" id="not sure" name="friend" value="not sure">
+      <label for="not sure">Not sure</label>
+      </div>
+
+    </fieldset>
+
+<p>What is your favorite feature of freeCodeCamp?</p>
+
+    <select id="dropdown" required>
+      <option value="" selected disabled>Select an option</option>
+      <option>Challenges</option>
+      <option>Projects</option>
+      <option>Community</option>
+      <option>Open Source</option>
+      </select>
+
+<p>What would you like to see improved? (Check all that apply)</p>
+
+      <div>
+     <input type="checkbox" id="Front-end Projects" name="improved" value="Front-end Projects" checked>
+      <label for="Front-end Projects">Front-end Projects</label>
+      </div>
+
+
+      <div>
+      <input type="checkbox" id="Back-end Projects" name="improved" value="Back-end Projects">
+      <label for="Back-end Projects">Back-end Projects</label>
+      </div>
+
+      <div>
+      <input type="checkbox" id="Data Visualization" name="improved" value="Data Visualization">
+      <label for="Data Visualization">Data Visualization</label> 
+      </div>
+
+      <div>
+      <input type="checkbox" id="Challenges" name="improved" value="Challenges">
+      <label for="Challenges">Challenges</label>
+      </div>
+
+
+      <div>
+      <input type="checkbox" id="Open Source Community" name="improved" value="Open Source Community">
+      <label for="Open Source Community">Open Source Community</label>
+      </div>
+
+
+      <div>
+      <input type="checkbox" id="Gitter help rooms" name="improved" value="Gitter help rooms">
+      <label for="Gitter help rooms">Gitter help rooms</label> 
+      </div>
+
+      <div>
+      <input type="checkbox" id="Videos" name="improved" value="Videos">
+      <label for="Videos">Videos</label>
+      </div>
+
+
+      <div>
+      <input type="checkbox" id="City Meetups" name="improved" value="City Meetups">
+      <label for="City Meetups">City Meetups</label>
+      </div>
+
+      <div>
+      <input type="checkbox" id="Wiki" name="improved" value="Wiki">
+      <label for="Wiki">Wiki</label>
+      </div> 
+
+      <div>
+      <input type="checkbox" id="Forum" name="improved" value="Forum">
+      <label for="Forum">Forum</label>
+      </div>
+
+      <div>
+      <input type="checkbox" id="Additional Courses" name="improved" value="Additional Courses">
+      <label for="Additional Courses">Additional Courses</label>
+      </div>
+
+      <p>Any comments or suggestions?</p>
+
+      <textarea rows="10" cols="50" placeholder="Enter your comment here..."></textarea>
+ 
+<input id="submit" type="Submit" value="Submit">
+
+      </form>
+
+</body>
+</html>
+
+

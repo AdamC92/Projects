@@ -1,0 +1,323 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+* {
+font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+padding: 0 2%;
+margin: 0;
+
+}
+
+
+/*Navbar*/
+
+
+nav {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F8F8FF;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  padding-left: 1%;
+
+}
+
+
+nav .profile {
+  display: flex;
+  align-items: center;
+}
+
+
+nav .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+
+nav .profile h2 {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
+nav ul li {
+  margin-left: 20px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+
+nav ul li a:link {
+  color: #2AABDA;
+  text-decoration: none;
+}
+
+
+nav ul li a:visited {
+  color: #B89A5D;
+}
+
+
+nav ul li a:hover {
+  color: #B89A5D;
+  box-shadow: 6px 6px 2px 1px rgba(42, 171, 218, 0.1)
+}
+
+
+/*contenu page*/
+
+
+.page-content {
+  margin: 4%;
+}
+
+.page-content header {
+  margin-top: 5%;
+  max-width: 80%;
+}
+
+.page-content header h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3vw;
+}
+
+.page-content header p {
+  line-height: 30px;
+  color: #818181;
+}
+
+
+.page-content .presentation-image {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-content .presentation-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5% 5% 5% 5%;
+}
+
+
+.page-content .projects-section {
+  margin-top: 6%;
+}
+
+.page-content .projects-section h3 {
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+
+.page-content .projects-section .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-content .projects-section .project {
+  margin-right: 20px;
+  max-width: 195px;
+}
+
+.page-content .projects-section .project h4 {
+  margin: 0;
+  padding-bottom: 5%;
+}
+
+.page-content .projects-section .project .description {
+  font-size: 10px;
+
+}
+
+.page-content .projects-section .project .dates {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+}
+
+
+/*footer*/
+
+
+#social-platforms {
+  position: relative;
+  top: 100px;
+  top: 25vh;
+  font-size: 1rem;
+  text-align: center;
+  height: 150px;
+  overflow: hidden;
+  background-color: #F8F8FF;
+}
+
+
+/*mise en forme boutons*/
+
+.btn {
+  font-size: .8em;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin: 2px;
+  transition: all .5s;
+  overflow: hidden
+}
+
+
+.btn:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+
+.btn:focus {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+.btn>span,
+.btn-icon>i {
+float: left;
+padding: 13px;
+  transition: all .5s;
+  line-height: 1em
+}
+
+
+.btn>span {
+  padding: 14px 18px 16px;
+  white-space: nowrap;
+  color: #FFF;
+  background: #b8b8b8;
+}
+
+
+.btn:focus>span {
+  background: #9a9a9a
+}
+
+
+.btn-icon>i {
+  border-radius: 5px 0 0 5px;
+  position: relative;
+  width: 13px;
+  text-align: center;
+  font-size: 1.25em;
+  color: #fff;
+  background: #212121;
+
+}
+
+
+/*Twitter*/
+
+.btn-twitter:hover>i,
+.btn-twitter:focus>i {
+  color: #55acee;
+}
+
+
+.btn-twitter>span {
+  background: #55acee;
+}
+
+/*LinkedIn*/
+
+.btn-linkedin:hover>i,
+.btn-linkedin:focus>i {
+  color: #007bb6;
+}
+
+.btn-linkedin>span {
+  background: #007bb6;
+}
+
+
+/*bouton haut page*/
+
+
+#scrollUp {
+  position: fixed;
+  bottom: 10px;
+  right: -100px;
+  opacity: 0.5;
+}
+
+
+/*pour les écrans inférieurs à  700px*/
+
+
+@media screen and (max-width: 700px) {
+
+  nav {
+    justify-content: center;
+    height: 75%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+
+  .page-content header {
+    margin-top: 10%;
+    max-width: 100%;
+  }
+
+
+  .page-content header h1 {
+    font-size: 5vw;
+  }
+
+
+  .page-content header p {
+    font-size: 4vw;
+  }
+
+
+  .page-content .projects-section {
+    margin-top: 15%;
+  }
+
+  .page-content .projects-section h3 {
+    font-size: 1.5em;
+  }
+
+  .page-content .projects-section .project {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+
+  }
+  .page-content .projects-section .project .description {
+
+    font-size: 13px;
+  }
+
+}
