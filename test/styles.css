@@ -50,6 +50,7 @@ nav .profile img {
 nav .profile h2 {
   margin-left: 15px;
   font-size: 20px;
+  color:#B89A5D
 }
 
 
@@ -100,11 +101,14 @@ nav ul li a:hover {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 3vw;
+  Color: #2AABDA;
+
+
 }
 
 .page-content header p {
   line-height: 30px;
-  color: #818181;
+  color: #000000;
 }
 
 
@@ -120,6 +124,18 @@ nav ul li a:hover {
   border-radius: 5% 5% 5% 5%;
 }
 
+.presentation-image img {
+  -webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.presentation-image img:hover {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
 
 .page-content .projects-section {
   margin-top: 6%;
@@ -128,31 +144,51 @@ nav ul li a:hover {
 .page-content .projects-section h3 {
   text-transform: uppercase;
   font-size: 3vw;
+  font-weight: bolder;
+  Color: #2AABDA;
 }
 
 .page-content .projects-section .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 5%;
 }
 
-.page-content .projects-section .project {
-  margin-right: 20px;
-  max-width: 195px;
+.page-content .projects-section .projects .project {
+max-width: 195px;;
+margin-right: 20px;
 }
+
+
 
 .page-content .projects-section .project h4 {
   margin: 0;
   padding-bottom: 5%;
 }
 
+.page-content .projects-section .project a:link {
+  color: #2AABDA;
+  text-decoration: none;
+}
+
+.page-content .projects-section .project a:visited {
+  color:#B89A5D;
+}
+
+.page-content .projects-section .project a:hover {
+  color: #B89A5D;
+  box-shadow: 6px 6px 2px 1px rgba(42, 171, 218, 0.1)
+}
+
+
 .page-content .projects-section .project .description {
-  font-size: 10px;
+  font-size: 13px;
 
 }
 
 .page-content .projects-section .project .dates {
-  font-size: 13px;
+  font-size: 10px;
   color: rgb(145, 145, 145);
 }
 
@@ -164,11 +200,12 @@ nav ul li a:hover {
   position: relative;
   top: 100px;
   top: 25vh;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   height: 150px;
   overflow: hidden;
   background-color: #F8F8FF;
+  color: #2AABDA;
 }
 
 
@@ -301,12 +338,14 @@ padding: 13px;
   }
 
 
+
   .page-content .projects-section {
     margin-top: 15%;
   }
 
   .page-content .projects-section h3 {
     font-size: 1.5em;
+    text-align: center;
   }
 
   .page-content .projects-section .project {
