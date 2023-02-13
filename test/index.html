@@ -10,32 +10,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-      <!--test utilisation jQuery pour bouton qui fait remonter en haut de la page-->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-      <script>
-         jQuery(function () {
-         
-            $(function () {
-         
-               $(window).scroll(function () {
-         
-                  if ($(this).scrollTop() > 200) {
-         
-                     $('#scrollUp').css('right', '10px');
-         
-                  } else {
-         
-                     $('#scrollUp').removeAttr('style');
-         
-                  }
       
-               });
-         
-            });
-         
-         });
-         
-      </script>
    </head>
    <body>
       <!--Navbar-->
@@ -67,7 +42,7 @@
             </p>
          </header>
          <div class="presentation-image">
-            <img src="https://lanouvelletribune.info/wp-content/uploads/2018/09/marseille.jpg" alt="AI image">
+            <img src="https://lanouvelletribune.info/wp-content/uploads/2018/09/marseille.jpg" alt="Image vieux port Marseille">
          </div>
          <!--Section avec les projets fait depuis FreeCodeCamp, photos projets qui devront Ãªtre rajoutÃ©s et revoir alignement descriptions/dates-->
          <section class="projects-section" id="projets">
@@ -135,5 +110,31 @@
             <a href="#top"><img src="https://www.linuxtricks.fr/upload/to_top.png" alt="to the bouton"></a>
          </div>
       </footer>
+      <!--test utilisation jQuery pour bouton qui fait remonter en haut de la page-->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+      <script>
+         jQuery(function () {
+         
+            $(function () {
+         
+               $(window).scroll(function () {
+         
+                  if ($(this).scrollTop() > 200) {
+         
+                     $('#scrollUp').css('right', '10px');
+         
+                  } else {
+         
+                     $('#scrollUp').removeAttr('style');
+         
+                  }
+      
+               });
+         
+            });
+         
+         });
+         
+      </script>
    </body>
 </html>
