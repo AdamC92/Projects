@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Test fenêtre modale</title>
+</head>
+<body>
+    <a href="#demo">Se connecter</a>
+
+<div id="demo" class="modal">
+  <div class="modal_content">
+    <form action="/ma-page-de-traitement" method="post">
+        <div>
+            <label for="name">Identifiant</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="mail">e-mail&nbsp;:</label>
+            <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+            <button>Se connecter</button>
+
+        </div>
+    </form>
+    
+
+    <a href="#" class="modal_close">&times;</a>
+  </div>
+</div>
+</body>
+</html>

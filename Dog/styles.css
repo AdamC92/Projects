@@ -1,4 +1,13 @@
 * {
     border: 1px solid red;
+    
 }
 
+.head {
+    width: 750px;
+    height:550px;
+    border-radius: 50px 50px 100px 100px;
+    background: #A52A2A;
+    margin: 0 auto;
+    
+}
