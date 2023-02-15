@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #374151;
+    width: calc(100% - 40px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header__logo img {
+    max-height: 50px;
+}
+
+
+.header__nav__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.header__nav__menu__link {
+    margin-right: 20px;
+}
+
+
+.header__nav__menu__link:last-of-type {
+    margin-right: initial;
+}
+
+.header__nav__menu__link a {
+    color: #fff;
+    font-family: 'Arial';
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__nav__menu__link a:after {
+    content: '';
+    height: 2px;
+    background-color: #fff;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.header__nav__menu__link a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.header__burger {
+    display: none;
+
+}
+
+.header__burger svg {
+    stroke: #fff;
+    width: 22px;
+    height: 22px;
+}
+
+.header__nav__close {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+
+    .header__burger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: #374151;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .header__nav.open {
+        display: flex;
+        animation: transformMenu 300ms ease-in-out forwards;
+    }
+
+    @keyframes transformMenu {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: initial;
+        }
+    }
+
+    .header__nav__menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__nav__menu__link {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header__nav__menu__link a {
+        font-size: 25px;
+    }
+
+    .header__nav__close {
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    .header__nav__close svg {
+        stroke: #fff;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+
+    .overlay-menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.6);
+        display: none;
+    }
+
+    .overlay-menu-mobile.open {
+        display: block;
+    }
+
+}
