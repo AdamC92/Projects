@@ -5,17 +5,74 @@
   src: url(/fonts/AstroSpace.ttf);
 }
 
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(90deg, #56AB2F 0%, #A8E063 98.24%);
+  
 }
 
 header {
   background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
+
+.ancre {
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, .7);
+  transition: all .4s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal_content {
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  background: linear-gradient(90deg, #56AB2F 0%, #A8E063 98.24%);
+  padding: 1.5em 2em;
+  color: #185467;
+}
+
+
+
+.modal_content > h1 {
+  text-align:center;
+}
+
+.modal_content > p {
+  text-align:center;
+  margin:0;
+}
+
+.modal_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: grey;
+  text-decoration: none;
+}
+
 
 .main-nav {
   height: 90px;
@@ -33,15 +90,20 @@ header {
 
 .navlinks {
   list-style: none;
-  float: right;
+  float: left;
   line-height: 90px;
   margin: 0;
   padding: 0;
 }
 
-.navlinks li {
+.navlinks li:not(.push-right) {
   display: inline-block;
   margin: 0px 20px;
+}
+
+ .push-right {
+  display:inline-block;
+  margin-left: 1230px;
 }
 
 .navlinks li a {
@@ -49,7 +111,7 @@ header {
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s linear 0s;
-  text-transform: uppercase;
+  
 }
 
 .navlinks li a:hover {
@@ -58,19 +120,7 @@ header {
   border-bottom: 2px solid #7ebcb9;
 }
 
-li a.contact {
-  background-color: #00adb5;
-  padding: 9px 20px;
-  border-radius: 50px;
-  transition: all 0.3s ease 0s;
-  border-bottom: none;
-}
 
-li a.contact:hover {
-  background-color: #047e85;
-  color: white;
-  border-bottom: none;
-}
 
 #check {
   display: none;
@@ -89,23 +139,111 @@ bottom: 96.45%;
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+.presentation {
+  margin: 5% 1% 1%;
+}
 
+.logo-site, .nom-site {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left:5%;
+  margin-top:1%
+  
+  
+}
+
+.logo-site {
+  width: 450px;
+  height: 450px;
+}
+
+.nom-site {
+font-family: 'Angry Birds Movie';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 110px;
+text-align: center;
+text-decoration-line: underline;
+margin:0;
+padding-left: 2%;
+color: #185467;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.presentation p { 
+
+margin-left: 15%;
+margin-right:15%;
+font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: 400;
+font-size: 70px;
+line-height: 94px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+
+.carrousel {
+display:flex;
+justify-content:center;
+margin-bottom: 10%;
+}
+
+.carrousel > img {
+  width:1100px;
+  height:700px;
+  border-radius:15%
+}
+
+.green-wave {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.wave {
+  width:1899px;
+}
+
+footer > .copyright {
+  font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 54px;
+color: #FFFFFF;
+position: absolute;
+margin-bottom: 0;
+
+}
+
+@media (max-width: 850px) {
+
+ 
   .main-nav {
-    height:10.7vh;
+    height:7vh;
   }
   .navlinks {
     position: fixed;
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     text-align: center;
     transition: all 0.5s;
     right: 100%;
-    background: #4DBFE2;
+    background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    top:7vh;
   }
 
   .navlinks li {
-    display: block;
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    width: 50%;
   }
 
   .navlinks li a {
@@ -123,9 +261,7 @@ bottom: 96.45%;
   #check:checked ~ .navlinks {
     right: 0;
   }
-}
 
-@media (max-width: 360px) {
   .logo {
     margin-left: 10px;
     font-size: 25px;
@@ -139,4 +275,83 @@ bottom: 96.45%;
   .menu-btn:focus {
     color: blue;
   }
+
+
+  .logo-site, .nom-site {
+    display: inline-block;
+    vertical-align: middle;
+
+    
+    
+  }
+  .logo-site {
+    width:120px;
+    height:120px;
+  }
+
+  .nom-site {
+    width:217px;
+    height:85px;
+    font-family: 'Angry Birds Movie';
+    font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #185467;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+    .presentation p {
+  
+width: 100%;
+height: 54px;
+margin:0;
+font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+    }
+
+
+    .carrousel {
+      margin-top:5%;
+    }
+
+    .carrousel >img {
+width: 380px;
+height: 400px;
+border: 1px solid #658C5F;
+border-radius: 100px;
+    }
+
+
+    .wave {
+      width: 100%;
+      height: 91px;
+      position:absolute;
+      bottom:0;
+    }
+
+    footer > .copyright {   
+
+width: 159px;
+height: 22px;
+font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+position:absolute;
+bottom:15px;
+    }
 }

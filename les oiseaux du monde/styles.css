@@ -1,0 +1,220 @@
+
+body {
+  margin:0;
+  padding:0;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(90deg, #56AB2F 0%, #A8E063 98.24%);
+}
+
+header {
+  background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main-nav {
+  height: 90px;
+  display: flex;
+  align-items: center;
+
+  
+}
+
+.logo {
+  color: white;
+  line-height: 90px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: "AstroSpace", sans-serif;
+}
+
+.navlinks {
+  list-style: none;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.navlinks li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+
+.navlinks li a:hover {
+  color: #7ebcb9;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #7ebcb9;
+}
+
+li a.contact {
+  background-color: #00adb5;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+}
+
+li a.contact:hover {
+  background-color: #047e85;
+  color: white;
+  border-bottom: none;
+}
+
+#check {
+  display: none;
+}
+
+.menu-btn {
+  font-size: 25px;
+  color: black;
+  float: left;
+  position: absolute;
+left: 5.64%;
+right: 89.74%;
+top: 2.13%;
+bottom: 96.45%;
+  display: none;
+  cursor: pointer;
+}
+
+.presentation {
+ 
+  margin: 5% 1% 1%;
+}
+
+.logo-site, .nom-site {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-site {
+  width: 350px;
+  height: 350px;
+}
+
+.nom-site {
+font-family: 'Angry Birds Movie';
+font-style: normal;
+font-weight: 400;
+font-size: 90px;
+line-height: 110px;
+text-align: center;
+text-decoration-line: underline;
+margin:0;
+padding-left: 2%;
+
+color: #185467;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.presentation p { 
+
+margin-left: 15%;
+margin-right:15%;
+font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: 400;
+font-size: 70px;
+line-height: 94px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+
+.carrousel {
+display:flex;
+justify-content:center;
+margin-bottom: 10%;
+}
+
+.carrousel > img {
+  width:1100px;
+  height:700px;
+  border-radius:15%
+}
+
+footer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > .copyright {
+  font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 54px;
+color: #FFFFFF;
+ 
+}
+
+@media (max-width: 800px) {
+
+  .main-nav {
+    height:10vh;
+  }
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: 100%;
+    background: #4DBFE2;
+  }
+
+  .navlinks li {
+    display: block;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .navlinks {
+    right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .menu-btn {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+  .menu-btn:focus {
+    color: blue;
+  }
+}

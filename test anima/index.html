@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-  />
-    <title>Les oiseaux du monde</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            />
+        <title>Les oiseaux du monde</title>
+    </head>
+    <header>
+        <nav class="main-nav">
+            <input type="checkbox" id="check" />
+            <label for="check" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html" class="logo"></a>
+            <ul class="navlinks">
+                <li><a href="#">HOME</a></li>
+                <li>
+                    <a class="ancre" href="#shop">SHOP</a>
+                    <div id="shop" class="modal">
+                        <div class="modal_content">
+                            <h1>Bonjour</h1>
+                            <p>Pour accéder au shop, vous devez être inscrit au site.</p>
+                            <p>Vous êtes déjà inscrit ? 
+                                Appuyez <a href="#connexion">ici</a> pour vous connecter
+                            </p>
+                            <a href="#" class="modal_close">&times;</a>
+                        </div>
+                    </div>
+                <li><a href="#">CONTACT</a></li>
+                <li class="push-right"><a href="#">INSCRIPTION</a></li>
+                <li><a href="#connexion">CONNEXION</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presentation">
+            <img class="logo-site" src="logo odm.png" alt="logo site"> 
+            <h1 class="nom-site">LES OISEAUX DU MONDE</h1>
+            <p class="accroche">Nos oiseaux sont beaux et nos tarifs légers comme une plume.</p>
+        </section>
+        <section class="carrousel">
+            <img src="perruche.png" alt="carrousel">
+        </section>
+    </main>
+    <footer class="green-wave">
+        <img class="wave" src="Vector.png" alt="green waves for footer">
+        <p class="copyright">Copyright S.C.A 2023</p>
+    </footer>
 
-<header>
-    <nav class="main-nav">
-      <input type="checkbox" id="check" />
-      <label for="check" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <a href="index.html" class="logo"></a>
-      <ul class="navlinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Inscription</a></li>
-        <li><a href="#">Connexion</a></li>
-      </ul>
-    </nav>
-  </header>
-</body>
-
+    
+    </body>
 </html>
