@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="teststyles.css" rel="stylesheet">
+
+        
+        <title>Les oiseaux du monde</title>
+    </head>
+
+
+    <body>
+
+        <div id="block">
+            <form id="form" method="post">
+         
+               <p class="info"><span> Besoin d'informations ?</span></p>
+                 <fieldset id="who">
+                     <label for="nom"><input id="name"  name="nom" type="text" placeholder="Nom" required /></label> 
+                     <label for="email"><input id="email"  name="email" type="email" placeholder="Mail" required/></label>
+                 </fieldset>
+                 <fieldset id="comment">
+                   <textarea name="ideas" cols="30" rows="10" placeholder=" Commentaire ici."></textarea>
+                 </fieldset>
+         </form>
+                 <a class="ancre1" href="#submit">
+                <button>Envoyer</button>
+                 </a>
+                 <div id="submit" class="modal">
+                     <div class="modal_content">
+                        <p>Votre message a bien été envoyé !</p>
+                         <a href="#" class="modal_close">&times;</a>
+                     </div>
+                 </div>
+                 
+         
+            
+         </div>
+
+
+
+
+    </body>

@@ -1,0 +1,589 @@
+*{
+    margin:0;
+    padding: 0;}
+  
+
+body{
+  
+  font-family: Abril Fatface, sans-serif;
+  background: linear-gradient(90deg, #56AB2F 0%, #A8E063 100%); 
+    
+ }
+ header {
+    background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .main-nav {
+    height: 48px;
+    
+  }
+  
+  .logo {
+    color: white;
+    line-height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+   
+  }
+  
+  .navlinks {
+    font-size: 1.5em;
+    list-style: none;
+    float: left;
+    line-height: 90px;
+    margin: 0;
+    padding: 0;
+    z-index:1;
+  }
+  
+  
+  
+  
+  .navlinks li a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s linear 0s;
+    
+  }
+  
+  .navlinks li a:hover {
+    color:#185467;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #7ebcb9;
+  }
+  
+  li a.contact {
+    background-color: #00adb5;
+    padding: 9px ;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    border-bottom: none;
+    
+  }
+  
+  li a.contact:hover {
+    background-color: #047e85;
+    color: white;
+    border-bottom: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .menu-btn {
+    font-size: 25px;
+    color: black;
+    float: left;
+    position: absolute;
+    left: 5.64%;
+    right: 89.74%;
+    display: none;
+    cursor: pointer;
+  }
+  
+  
+
+ #where{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  
+
+ }
+.google{
+   border-radius: 15px;
+   box-shadow: 0 4px 20px rgb(56, 56, 56);
+}
+
+#block{
+  height: 400px;
+ } 
+ 
+  #form {
+      font-family: Abril Fatface, sans-serif;
+      width: 370px;
+      height: 45vh;
+      margin: 0 auto;
+      background-image: url(images/forest-s.jpg);
+      opacity: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+      margin-top: 2vh;
+      box-shadow: 0 4px 10px rgb(56, 56, 56);
+      
+      
+    
+  }
+  
+  
+
+  
+    
+  p.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:327px;
+    height: 4vh;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgb(56, 56, 56);
+    margin-top: 2vh;
+    
+    
+
+  }
+
+  .ancre1 {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+  
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal_content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: linear-gradient(90deg, #56AB2F 0%, #A8E063 98.24%);
+    padding: 1.5em 2em;
+    color: #185467;
+  }
+  
+  
+  
+  .modal_content > h1 {
+    text-align:center;
+  }
+  
+  .modal_content > p {
+    text-align:center;
+    margin:0;
+  }
+  
+  .modal_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    text-decoration: none;
+  }
+  
+  span{
+    font-family: Abril Fatface, sans-serif;
+    color: #185467;
+   
+  }
+
+  label {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      
+      
+  }
+  input{
+    font-family: abril fatface, sans-serif;
+    background-color: rgb(252, 252, 252);
+    width:327px;
+    height: 4vh;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+    box-sizing:border-box;
+  
+    
+  }
+  
+  fieldset{
+    border:none;
+    box-sizing: border-box;
+    
+  }
+ 
+textarea{
+      background-color: white;
+      font-family: abril fatface, sans-serif;
+      width:327px;
+      height: 17vh;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: none;
+      resize: none;
+      box-shadow: 0 4px 10px rgb(56, 56, 56);
+          
+ }
+    #submit{
+      
+      font-family: abril fatface, sans-serif;
+      color:#185467;
+      font-size: 1em;
+      width: 11vh;
+      margin-top: 1vh;
+      padding: 0;
+      border-radius: 15px ;
+      text-align: center;
+      box-sizing: border-box;
+      margin-top: 2vh;
+      
+    }
+    
+    #social{
+      width: 75%;
+      margin-top: 5vh;
+      margin: 0 auto;
+      
+    }
+    #lien{
+    
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+        
+    }
+      
+    .reso{
+      color: #185467;
+       font-size: 3em; 
+    }
+    
+      
+    
+    
+   
+    
+     
+     footer{
+      position: absolute;
+      display:flex;
+      justify-content: center;
+      width:100%;
+      bottom: 0;
+          
+      
+    }
+    
+     
+    
+    
+     
+    
+    .copyright{
+      font-family: 'Abril Fatface';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1em;
+      color: #FFFFFF;
+      position: absolute;
+      margin-top: 7vh;
+      
+             
+      
+}
+/*------------------------------------------CSS 2 INSCRIPTION-----------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+  
+#parrot{
+  margin: 100px 0 0 336px;
+}
+
+ .invit {
+  color:#185467;
+  font-size: 1.5em;
+  text-shadow:  3px 1px  10px black;
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+
+ }
+
+/* RESPONSIVE---------------------------------------------------------------------------------*/
+@media (max-width:800px){
+    .main-nav {
+      height:6vh;
+    }
+    .navlinks {
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      transition: all 0.5s;
+      right: 100%;
+      background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+    top: 6vh;
+    }
+
+  
+    .navlinks li {
+      display: block;
+    }
+    
+  
+    .navlinks li a {
+      font-size: 20px;
+    }
+  
+    .navlinks li a:hover {
+      border-bottom: none;
+      
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  
+    #check:checked ~ .navlinks {
+      right: 0;
+    }
+  }
+
+   
+
+
+  
+@media (min-width: 1440px) {
+  
+  
+  body{
+    height: 100%;
+  }
+      .main-nav {
+        height: 64px;
+      }
+      
+      .logo {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: abril fatface, sans-serif;
+      }
+      
+      .navlinks {
+        float: left;
+        margin-left: 20px;
+        padding: 0;
+        list-style: none;
+        line-height: 60px;
+        z-index: 2;
+      }
+      
+      
+     
+      .navlinks li:not(.push-right){
+        display: inline-block;
+        margin: 0px 20px;
+      }
+      .push-right {
+        display: inline-block;
+        margin-left: 1230px;
+      }
+      .navlinks li a {
+        color: #000;
+        text-decoration: none;
+        transition: all 0.3s linear 0s;
+     
+      }
+      
+      .navlinks li a:hover {
+          color:#185467;
+        padding-bottom: 7px;
+        border-bottom: 2px solid  #185467;
+      }
+      
+      li a.contact {
+        background-color: #00adb5;
+        padding: 9px 20px;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+        border-bottom: none;
+      }
+      
+      li a.contact:hover {
+        background-color: #047e85;
+        color: white;
+        border-bottom: none;
+      }
+      
+      #check {
+        display: none;
+      }
+      
+      .menu-btn {
+        
+        color: black;
+        position: absolute;
+        left: 5.64%;
+        right: 89.74%;
+        display: none;
+        cursor: pointer;
+      }
+      
+      #where{
+        width: 847px;
+        height: 467px;
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+      }
+        
+      
+      #map{
+        position: absolute;
+        margin-left: 87px;
+        margin-top: 120px;
+     
+    }
+   
+
+    p.info{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:565px;
+      height: 55px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 4px 10px rgb(56, 56, 56);
+      margin-top: 2vh;
+    }
+    span{
+      font-family: Abril Fatface, sans-serif;
+      font-size:2em;
+      color: #185467;
+    }
+    #form{
+      width: 620px;
+      height:670px;
+      margin-right: 173px;
+      margin-top: 60px;
+      background-image: url(images/forest-m.png)
+     } 
+     
+    
+  
+    label {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        
+        
+    }
+    input{
+      font-family: abril fatface, sans-serif;
+      background-color: rgb(252, 252, 252);
+      width:565px;
+      height: 55px;
+      font-size: 1.3em;
+      box-shadow: 0 4px 10px rgb(0, 0, 0);
+      border-radius: 5px;
+      border: none;
+      padding-left: 5px;
+      box-sizing:border-box;
+      margin-top: 20px;
+    
+      
+    }
+    
+    fieldset{
+      
+      border:none;
+      box-sizing: border-box;
+      
+    }
+   
+  textarea{
+    font-family: abril fatface, sans-serif;
+        background-color: white;
+        width:565px;
+        height: 200px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        resize: none;
+        margin-top: 50px;
+        box-shadow: 0 4px 10px rgb(56, 56, 56);
+            
+   }
+   #submit{
+      
+    font-family: abril fatface, sans-serif;
+    color:#185467;
+    font-size: 1.9em;
+    width: 241px;
+    height:75px;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 30px;
+    
+    
+  }
+  #lien{
+    position: absolute;
+    width: 600px;
+    font-size: 1.5em;
+    margin-top:200px;
+    margin-left: -40px;
+    
+    
+    
+  }
+  footer{
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    
+        
+    
+  }
+  
+        
+  .copyright{
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    color: #FFFFFF;
+    position: absolute;
+  margin-top: 10vh;
+    
+           
+    
+}
+#pied{
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+}
+  }
+  
+  

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesthomas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css "/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
+
+    
+    <title>Contact</title>
+</head>
+<body>
+    
+        <header>
+            <nav class="main-nav">
+              <input type="checkbox" id="check" />
+              <label for="check" class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+              </label>
+              <a href="index.html" class="logo"></a>
+              <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="push-right"><a href="#">Inscription</a></li>
+                <li><a href="#">Connexion</a></li>
+              </ul>
+            </nav>
+        </header>
+ 
+       
+ <div id="map">
+        <a href="https://www.google.com/maps/place/53+Bd+Lav%C3%A9ran,+13013+Marseille/data=!4m2!3m1!1s0x12c9bf9818ecae4b:0xc457efb7514aff41?sa=X&ved=2ahUKEwj9jYSDmKb9AhXQTqQEHZYXB74Q8gF6BAgZEAI"><picture id="where">
+            <source media="(min-width:1440px)" srcset="max.png">
+            <source media="(max-width:1440px)" srcset="map-390.png">
+           <img class="google" src="map-390.png" alt="map">
+        </picture> 
+        </a>
+</div>
+<div id="block">
+   <form id="form" method="post" action="*">
+   
+      <p class="info"><span> Besoin d'informations ?</span></p>
+        <fieldset id="who">
+            <label for="nom"><input id="name"  name="nom" type="text" placeholder="Nom" required /></label> 
+            <label for="email"><input id="email"  name="email" type="email" placeholder="Mail" required/></label>
+        </fieldset>
+        <fieldset id="comment">
+          <textarea name="ideas" cols="30" rows="10" placeholder=" Commentaire ici."></textarea>
+        </fieldset>
+    
+     <a class="ancre1" href="#submit">
+      <button>Envoyer</button>
+       </a>
+       <div id="submit" class="modal">
+           <div class="modal_content">
+              <p>Votre message a bien été envoyé !</p>
+               <a href="#" class="modal_close">&times;</a>
+           </div>
+       </div>
+       </form>
+   
+</div>
+  
+ <div id="social">
+  <div id="lien">
+          
+                <a  href="https://fr-fr.facebook.com/"><ion-icon name="logo-facebook" class="reso"></ion-icon></a>
+                <a  href="https://twitter.com/"><ion-icon name="logo-twitter" class="reso"></ion-icon></a>
+                <a  href="https://instagram.com/"><ion-icon name="logo-instagram" class="reso"></ion-icon></a>
+                <a  href="https://www.whatsapp.com/"><ion-icon name="logo-whatsapp" class="reso"></ion-icon></a>
+  </div>
+ </div>
+    
+        <footer>
+                  
+          <picture id="foot">
+            <source media="(min-width:1440px)" srcset="vector.png">
+            <source media="(max-width:1440px)" srcset="vector-s.png">
+            <img class="wave" src="vector.png" alt="map" style="width:auto">
+        </picture> 
+            <p class="copyright">
+              Copyright S.C.A 2023.
+            </p>    
+        
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+</body>
+</html>

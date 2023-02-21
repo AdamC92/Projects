@@ -1,15 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-
-@font-face {
-  font-family: AstroSpace;
-  src: url(/fonts/AstroSpace.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Abril Fatface',sans-serif;
   background: linear-gradient(90deg, #56AB2F 0%, #A8E063 98.24%);
   
 }
@@ -18,6 +12,8 @@ header {
   background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
+
+/*partie concernant la fenêtre pop-up*/
 
 .ancre {
   text-decoration: none;
@@ -73,6 +69,11 @@ header {
   text-decoration: none;
 }
 
+/*fin partie fenêtre pop-up*/
+
+
+
+/* début partie navbar*/
 
 .main-nav {
   height: 90px;
@@ -103,7 +104,7 @@ header {
 
  .push-right {
   display:inline-block;
-  margin-left: 1230px;
+  margin-left: 1265px;
 }
 
 .navlinks li a {
@@ -120,7 +121,9 @@ header {
   border-bottom: 2px solid #7ebcb9;
 }
 
+/*fin partie navbar*/
 
+/*menu burger*/
 
 #check {
   display: none;
@@ -138,6 +141,10 @@ bottom: 96.45%;
   display: none;
   cursor: pointer;
 }
+
+/*fin menu burger*/
+
+/*section présentation avec logo, nom du site et accroche*/
 
 .presentation {
   margin: 5% 1% 1%;
@@ -158,7 +165,6 @@ bottom: 96.45%;
 }
 
 .nom-site {
-font-family: 'Angry Birds Movie';
 font-style: normal;
 font-weight: 400;
 font-size: 96px;
@@ -186,17 +192,93 @@ text-align: center;
 color: #FFFFFF;
 }
 
-.carrousel {
-display:flex;
-justify-content:center;
-margin-bottom: 10%;
+/*fin section présentation logo, nom du site et accroche*/
+
+/* début section carroussel utilisant js*/
+
+.micro-slider {
+  height: 480px;
+  /* margin: 10px 0; */
+  position: relative;
+  width: 100%;
+}
+.micro-slider.fullwidth {
+  height: 480px;
+  /* margin: 64px 0; */
+}
+.micro-slider.fullwidth .slider-item {
+  height: 480px;
+  line-height: 480px;
+  width: 100%
+}
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 0 50%;
+}
+.slider-item {
+  background: #FFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12);
+  color: #FFF;
+  display: none;
+  height: 320px;
+  width: 320px;
+  line-height: 320px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  
+  cursor: pointer;
+  border-radius: 50%;
 }
 
-.carrousel > img {
-  width:1100px;
-  height:700px;
-  border-radius:15%
+.imgSlider {
+  border-radius: 50%;
+  height: 320px;
+  width: 320px;
 }
+/*
+.slider-item:not(.active) {cursor: pointer;}
+*/
+.indicators {
+  bottom: 0px;
+  left: 50%;
+  list-style-type: none;
+  margin: 0 0 0 -77px;
+  padding: 0;
+  position: absolute;
+}
+.indicators li {
+  color: #fff;
+  float: left;
+  height: 16px;
+  margin-right: 8px;
+  text-align: center;
+  width: 16px;
+}
+.indicators li:last-child {margin: 0;}
+.indicators a {
+  background: #FFF;
+  border-radius: 8px;
+  border: 1px solid #E6E9EC;
+  color: #FFF;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+.indicators .active a {background: #E6E9EC;}
+.s1 {background: #3f51b5;}
+.s2 {background: #448aff;}
+.s3 {background: #03a9f4;}
+.s4 {background: #00bcd4;}
+.s5 {background: #009688;}
+.s6 {background: #4caf50;}
+
+/*fin de la section carroussel*/
+
+/*début footer*/
 
 .green-wave {
   display:flex;
@@ -218,11 +300,17 @@ line-height: 54px;
 color: #FFFFFF;
 position: absolute;
 margin-bottom: 0;
-
 }
+
+
+
+/* fin footer*/
+
+/* partie avec les media query lorsque largeur page =/< à 850px*/
 
 @media (max-width: 850px) {
 
+  /* début partie navbar media query*/
  
   .main-nav {
     height:7vh;
@@ -237,6 +325,9 @@ margin-bottom: 0;
     background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     top:7vh;
+    z-index:1;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
   }
 
   .navlinks li {
@@ -253,6 +344,10 @@ margin-bottom: 0;
   .navlinks li a:hover {
     border-bottom: none;
   }
+
+  /* fin partie navbar media query*/
+
+  /* début partie menu burger media query*/
 
   .menu-btn {
     display: block;
@@ -276,14 +371,15 @@ margin-bottom: 0;
     color: blue;
   }
 
+/* fin partie menu burger media query*/
+
+/* début partie section présentation media query*/
 
   .logo-site, .nom-site {
     display: inline-block;
-    vertical-align: middle;
-
-    
-    
+    vertical-align: middle; 
   }
+
   .logo-site {
     width:120px;
     height:120px;
@@ -292,47 +388,35 @@ margin-bottom: 0;
   .nom-site {
     width:217px;
     height:85px;
-    font-family: 'Angry Birds Movie';
     font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-text-decoration-line: underline;
-
-color: #185467;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #185467;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
     .presentation p {
   
-width: 100%;
-height: 54px;
-margin:0;
-font-family: 'Abril Fatface';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #FFFFFF;
+    width: 100%;
+    height: 54px;
+    margin:0;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
     }
 
+     /* fin partie section présentation media query*/
 
-    .carrousel {
-      margin-top:5%;
-    }
-
-    .carrousel >img {
-width: 380px;
-height: 400px;
-border: 1px solid #658C5F;
-border-radius: 100px;
-    }
-
+      /* début partie footer media query*/
 
     .wave {
       width: 100%;
@@ -342,16 +426,22 @@ border-radius: 100px;
     }
 
     footer > .copyright {   
-
-width: 159px;
-height: 22px;
-font-family: 'Abril Fatface';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-color: #FFFFFF;
-position:absolute;
-bottom:15px;
+    
+    width: 159px;
+    height: 22px;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    position:absolute;
+    bottom:15px;
     }
-}
+  }
+
+  
+
+ /* début partie footer media query*/
+
+/* fin partie avec les media query lorsque largeur page =/< à 850px*/

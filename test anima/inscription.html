@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stylesinscrip.css" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        >
+
+        <title>Les oiseaux du monde</title>
+    </head>
+
+    <body>
+    <!--début Header avec navbar et fenêtre pop-up-->
+    <header>
+        <nav class="main-nav">
+            <!-- partie qui permet création menu burger grâce à la checkbox-->
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html" class="logo"></a>
+            <!--fin partie checkbox et début liste navbar-->
+            <ul class="navlinks">
+                <li><a href="#">HOME</a></li>
+                <li>
+                    <!--partie du code dans la navbar qui permet d'ouvrir et fermer la fenêtre pop-up-->
+                    <a class="ancre" href="#shop">SHOP</a>
+                    <div id="shop" class="modal">
+                        <div class="modal_content">
+                            <h1>Bonjour</h1>
+                            <p>Pour accéder au shop, vous devez être inscrit au site.</p>
+                            <p>Vous êtes déjà inscrit ? 
+                                Appuyez <a href="#connexion">ici</a> pour vous connecter
+                            </p>
+                            <a href="#" class="modal_close">&times;</a>
+                        </div>
+                    </div>
+                    <!--fin partie code pour le pop-up-->
+                <li><a href="#">CONTACT</a></li>
+                <li class="push-right"><a href="#">INSCRIPTION</a></li>
+                <li><a href="#connexion">CONNEXION</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin header/navbar-->
+
+    <main>
+        <section></section>
+
+
+
+
+
+    </main>
+
+</body>

@@ -2,25 +2,31 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            />
+            >
         <title>Les oiseaux du monde</title>
     </head>
+
+
+    <!--début Header avec navbar et fenêtre pop-up-->
     <header>
         <nav class="main-nav">
-            <input type="checkbox" id="check" />
+            <!-- partie qui permet création menu burger grâce à la checkbox-->
+            <input type="checkbox" id="check">
             <label for="check" class="menu-btn">
             <i class="fas fa-bars"></i>
             </label>
             <a href="index.html" class="logo"></a>
+            <!--fin partie checkbox et début liste navbar-->
             <ul class="navlinks">
                 <li><a href="#">HOME</a></li>
                 <li>
+                    <!--partie du code dans la navbar qui permet d'ouvrir et fermer la fenêtre pop-up-->
                     <a class="ancre" href="#shop">SHOP</a>
                     <div id="shop" class="modal">
                         <div class="modal_content">
@@ -32,27 +38,51 @@
                             <a href="#" class="modal_close">&times;</a>
                         </div>
                     </div>
-                <li><a href="#">CONTACT</a></li>
+                    <!--fin partie code pour le pop-up-->
+                <li><a href="contact.html">CONTACT</a></li>
                 <li class="push-right"><a href="#">INSCRIPTION</a></li>
                 <li><a href="#connexion">CONNEXION</a></li>
             </ul>
         </nav>
     </header>
+    <!--Fin header/navbar-->
+
+
+    <!--début première partie du contenu page avec logo site, nom site et phrase d'accroche-->
     <main>
         <section class="presentation">
-            <img class="logo-site" src="logo odm.png" alt="logo site"> 
+            <img class="logo-site" src="logo_odm.png" alt="logo site"> 
             <h1 class="nom-site">LES OISEAUX DU MONDE</h1>
             <p class="accroche">Nos oiseaux sont beaux et nos tarifs légers comme une plume.</p>
         </section>
-        <section class="carrousel">
-            <img src="perruche.png" alt="carrousel">
+        <!--fin première partie contenu page et début du carousel-->
+        <section id="micro-slider">
+            
+            <div class="micro-slider">
+                <div class="slider-item s1"><img src="perruche.jpg" alt="perruche" class="imgSlider"></div>
+                <div class="slider-item s2"><img src="ara.jpg" alt="ara" class="imgSlider"></div>
+                <div class="slider-item s3"><img src="mouche.jpg" alt="oiseau mouche" class="imgSlider"></div>
+                <div class="slider-item s4"><img src="orange.jpg" alt="oiseau orange" class="imgSlider"></div>
+                <div class="slider-item s5"><img src="toucan.jpg" alt="toucan" class="imgSlider"></div>
+                <div class="slider-item s6"><img src="vert.jpg" alt="oiseau vert" class="imgSlider"></div>
+            </div>
         </section>
+        <!--fin carousel-->
+        <!--partie footer-->
     </main>
     <footer class="green-wave">
         <img class="wave" src="Vector.png" alt="green waves for footer">
         <p class="copyright">Copyright S.C.A 2023</p>
     </footer>
 
+
+   
+    <!--fin footer-->
+    <!--partie script avec le fichier .js et appel cdn-->
+    <script src="script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     
+    <!--fin partie script-->
     </body>
 </html>
